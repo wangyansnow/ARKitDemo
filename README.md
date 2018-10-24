@@ -30,6 +30,7 @@ translation.columns[3].z = -1;
 ![2.点击屏幕增加3D模型.gif](https://upload-images.jianshu.io/upload_images/1679203-5a944e1459d2d6bc.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 <h5 id='2.1'>2.1 画面捕捉</h5>
+
 主要就是三个类：
 * `ARSCNView`: 画面显示
 * `ARConfiguration`: 捕捉画面
@@ -120,7 +121,6 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 ```objectivec
 #import "ViewController.h"
 #import <QuickLook/QuickLook.h>
-#import "WYPreviewItem.h"
 
 @interface ViewController ()<QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 

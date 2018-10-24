@@ -1,4 +1,4 @@
-###ARKit学习
+### ARKit学习
 1. [ARKit点击屏幕增加文字](#1)
 2. [ARKit点击屏幕增加3D模型](#2)
 3. [ARKit检测到平面自动增加3D模型](#3)
@@ -14,11 +14,11 @@
 
 * command+shift+n新建一个项目，然后选择`Augmented Reality App`
 
-![](https://upload-images.jianshu.io/upload_images/1679203-055f0cdc8f5eac78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<img src="https://upload-images.jianshu.io/upload_images/1679203-055f0cdc8f5eac78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=375 />
 
 * 在Content Technology中选择`SpriteKit`即可
 
-![](https://upload-images.jianshu.io/upload_images/1679203-d78bf64274d811f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<img src="https://upload-images.jianshu.io/upload_images/1679203-d78bf64274d811f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=375 />
 
 * 控制文字距离相机的距离(改变这个Z感受一下变化)
 ```objectivec
@@ -26,7 +26,9 @@ matrix_float4x4 translation = matrix_identity_float4x4;
 translation.columns[3].z = -1;
 ```
 <h4 id='2'>2. ARKit点击屏幕增加3D模型</h4>
+
 ![2.点击屏幕增加3D模型.gif](https://upload-images.jianshu.io/upload_images/1679203-5a944e1459d2d6bc.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+
 <h5 id='2.1'>2.1 画面捕捉</h5>
 主要就是三个类：
 * `ARSCNView`: 画面显示
@@ -262,7 +264,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 * 每个建对应的值都是0~1的值
 * 共51个表示人脸特征的参数
 
-![](https://upload-images.jianshu.io/upload_images/1679203-4f2261c6c451f578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<img src="https://upload-images.jianshu.io/upload_images/1679203-4f2261c6c451f578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=375 />
 
 | 属性      |     说明 |   备注   |
 | :------: | :------:| :------: |
@@ -318,4 +320,4 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 | ARBlendShapeLocationTongueOut  | 舌头延伸 |   |
 
 <div id='mouth'>1. ARBlendShapeLocationMouthClose</div>
-![ARBlendShapeLocationMouthClose](https://upload-images.jianshu.io/upload_images/1679203-da94882a82af11f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<img src="https://upload-images.jianshu.io/upload_images/1679203-da94882a82af11f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=375 />

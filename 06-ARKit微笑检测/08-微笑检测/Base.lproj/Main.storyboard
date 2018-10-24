@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-ew-bRE">
+                                <rect key="frame" x="0.0" y="44" width="375" height="400"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="mW0-ap-k7j"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k87-Co-Oj6">
+                                <rect key="frame" x="85" y="459.66666666666669" width="225" height="31"/>
+                                <connections>
+                                    <action selector="smileValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lvC-qo-HGm"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微笑系数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2B-NG-FSI">
+                                <rect key="frame" x="12" y="464" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-dS-gdE">
+                                <rect key="frame" x="313" y="464" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Feq-ra-Mur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-38-QhU">
+                                <rect key="frame" x="12" y="515" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Dpl-WC-E2B"/>
+                                    <constraint firstAttribute="height" constant="50" id="iFB-nF-uFI"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="startBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfh-JW-5BC"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测到笑脸，停止画面采集，如要继续，请点击开始按钮" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdm-DE-TDx">
+                                <rect key="frame" x="12" y="585" width="343" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hdm-DE-TDx" firstAttribute="top" secondItem="ss3-38-QhU" secondAttribute="bottom" constant="20" id="0QE-p4-0WT"/>
+                            <constraint firstItem="DYy-dS-gdE" firstAttribute="centerY" secondItem="b2B-NG-FSI" secondAttribute="centerY" id="2U0-56-1Lt"/>
+                            <constraint firstItem="Kqo-ew-bRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5ez-U3-BRI"/>
+                            <constraint firstItem="ss3-38-QhU" firstAttribute="top" secondItem="b2B-NG-FSI" secondAttribute="bottom" constant="30" id="7ad-yG-LXw"/>
+                            <constraint firstItem="k87-Co-Oj6" firstAttribute="centerY" secondItem="b2B-NG-FSI" secondAttribute="centerY" id="IXI-DD-WH0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kqo-ew-bRE" secondAttribute="trailing" id="K2o-rV-48u"/>
+                            <constraint firstAttribute="trailing" secondItem="Hdm-DE-TDx" secondAttribute="trailing" constant="20" id="K9l-DI-BuD"/>
+                            <constraint firstItem="Hdm-DE-TDx" firstAttribute="leading" secondItem="ss3-38-QhU" secondAttribute="leading" id="LDa-NP-Lg5"/>
+                            <constraint firstItem="k87-Co-Oj6" firstAttribute="leading" secondItem="b2B-NG-FSI" secondAttribute="trailing" constant="5" id="QE5-8B-y6e"/>
+                            <constraint firstItem="ss3-38-QhU" firstAttribute="leading" secondItem="b2B-NG-FSI" secondAttribute="leading" id="Tld-tb-l75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DYy-dS-gdE" secondAttribute="trailing" constant="12" id="cMh-hS-m6q"/>
+                            <constraint firstItem="Kqo-ew-bRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hGS-CF-7kJ"/>
+                            <constraint firstItem="b2B-NG-FSI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="l06-9d-Zvm"/>
+                            <constraint firstItem="b2B-NG-FSI" firstAttribute="top" secondItem="Kqo-ew-bRE" secondAttribute="bottom" constant="20" id="n18-QJ-Abr"/>
+                            <constraint firstItem="DYy-dS-gdE" firstAttribute="leading" secondItem="k87-Co-Oj6" secondAttribute="trailing" constant="5" id="xCC-d3-d5k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Hdm-DE-TDx" id="Xtu-cn-J4Y"/>
+                        <outlet property="smileLabel" destination="DYy-dS-gdE" id="iFn-Gn-xW8"/>
+                        <outlet property="topContainerView" destination="Kqo-ew-bRE" id="htQ-MW-GhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="74.630541871921181"/>
+        </scene>
+    </scenes>
+</document>

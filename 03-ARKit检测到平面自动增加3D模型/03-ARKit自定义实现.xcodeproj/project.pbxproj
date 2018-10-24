@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E32EBDA3215FA27400F9912E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E32EBDA2215FA27400F9912E /* AppDelegate.m */; };
+		E32EBDA6215FA27400F9912E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32EBDA5215FA27400F9912E /* ViewController.m */; };
+		E32EBDA9215FA27400F9912E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32EBDA7215FA27400F9912E /* Main.storyboard */; };
+		E32EBDAB215FA27700F9912E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32EBDAA215FA27700F9912E /* Assets.xcassets */; };
+		E32EBDAE215FA27700F9912E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32EBDAC215FA27700F9912E /* LaunchScreen.storyboard */; };
+		E32EBDB1215FA27700F9912E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E32EBDB0215FA27700F9912E /* main.m */; };
+		E32EBDB9215FA2F300F9912E /* ARSCNVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E32EBDB8215FA2F300F9912E /* ARSCNVC.m */; };
+		E32EBDBD216071D300F9912E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E32EBDBC216071D300F9912E /* art.scnassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E32EBD9E215FA27400F9912E /* 03-ARKit自定义实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-ARKit自定义实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32EBDA1215FA27400F9912E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E32EBDA2215FA27400F9912E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E32EBDA4215FA27400F9912E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E32EBDA5215FA27400F9912E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E32EBDA8215FA27400F9912E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E32EBDAA215FA27700F9912E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E32EBDAD215FA27700F9912E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E32EBDAF215FA27700F9912E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32EBDB0215FA27700F9912E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E32EBDB7215FA2F300F9912E /* ARSCNVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNVC.h; sourceTree = "<group>"; };
+		E32EBDB8215FA2F300F9912E /* ARSCNVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNVC.m; sourceTree = "<group>"; };
+		E32EBDBC216071D300F9912E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E32EBD9B215FA27400F9912E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E32EBD95215FA27400F9912E = {
+			isa = PBXGroup;
+			children = (
+				E32EBDA0215FA27400F9912E /* 03-ARKit自定义实现 */,
+				E32EBD9F215FA27400F9912E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E32EBD9F215FA27400F9912E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E32EBD9E215FA27400F9912E /* 03-ARKit自定义实现.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E32EBDA0215FA27400F9912E /* 03-ARKit自定义实现 */ = {
+			isa = PBXGroup;
+			children = (
+				E32EBDBC216071D300F9912E /* art.scnassets */,
+				E32EBDA1215FA27400F9912E /* AppDelegate.h */,
+				E32EBDA2215FA27400F9912E /* AppDelegate.m */,
+				E32EBDA4215FA27400F9912E /* ViewController.h */,
+				E32EBDA5215FA27400F9912E /* ViewController.m */,
+				E32EBDB7215FA2F300F9912E /* ARSCNVC.h */,
+				E32EBDB8215FA2F300F9912E /* ARSCNVC.m */,
+				E32EBDA7215FA27400F9912E /* Main.storyboard */,
+				E32EBDAA215FA27700F9912E /* Assets.xcassets */,
+				E32EBDAC215FA27700F9912E /* LaunchScreen.storyboard */,
+				E32EBDAF215FA27700F9912E /* Info.plist */,
+				E32EBDB0215FA27700F9912E /* main.m */,
+			);
+			path = "03-ARKit自定义实现";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E32EBD9D215FA27400F9912E /* 03-ARKit自定义实现 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32EBDB4215FA27700F9912E /* Build configuration list for PBXNativeTarget "03-ARKit自定义实现" */;
+			buildPhases = (
+				E32EBD9A215FA27400F9912E /* Sources */,
+				E32EBD9B215FA27400F9912E /* Frameworks */,
+				E32EBD9C215FA27400F9912E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-ARKit自定义实现";
+			productName = "03-ARKit自定义实现";
+			productReference = E32EBD9E215FA27400F9912E /* 03-ARKit自定义实现.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E32EBD96215FA27400F9912E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "https://github.com/wangyansnow";
+				TargetAttributes = {
+					E32EBD9D215FA27400F9912E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E32EBD99215FA27400F9912E /* Build configuration list for PBXProject "03-ARKit自定义实现" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E32EBD95215FA27400F9912E;
+			productRefGroup = E32EBD9F215FA27400F9912E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E32EBD9D215FA27400F9912E /* 03-ARKit自定义实现 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E32EBD9C215FA27400F9912E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32EBDAE215FA27700F9912E /* LaunchScreen.storyboard in Resources */,
+				E32EBDBD216071D300F9912E /* art.scnassets in Resources */,
+				E32EBDAB215FA27700F9912E /* Assets.xcassets in Resources */,
+				E32EBDA9215FA27400F9912E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E32EBD9A215FA27400F9912E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32EBDB9215FA2F300F9912E /* ARSCNVC.m in Sources */,
+				E32EBDA6215FA27400F9912E /* ViewController.m in Sources */,
+				E32EBDB1215FA27700F9912E /* main.m in Sources */,
+				E32EBDA3215FA27400F9912E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E32EBDA7215FA27400F9912E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32EBDA8215FA27400F9912E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E32EBDAC215FA27700F9912E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E32EBDAD215FA27700F9912E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E32EBDB2215FA27700F9912E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E32EBDB3215FA27700F9912E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E32EBDB5215FA27700F9912E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CTXC2MCNP9;
+				INFOPLIST_FILE = "03-ARKit自定义实现/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wy.-3-ARKit-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E32EBDB6215FA27700F9912E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CTXC2MCNP9;
+				INFOPLIST_FILE = "03-ARKit自定义实现/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wy.-3-ARKit-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E32EBD99215FA27400F9912E /* Build configuration list for PBXProject "03-ARKit自定义实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32EBDB2215FA27700F9912E /* Debug */,
+				E32EBDB3215FA27700F9912E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32EBDB4215FA27700F9912E /* Build configuration list for PBXNativeTarget "03-ARKit自定义实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32EBDB5215FA27700F9912E /* Debug */,
+				E32EBDB6215FA27700F9912E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E32EBD96215FA27400F9912E /* Project object */;
+}

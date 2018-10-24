@@ -290,8 +290,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 | ARBlendShapeLocationJawLeft    | 下颌向左运动 |   |
 | ARBlendShapeLocationJawOpen    | 下颌开口|   |
 | ARBlendShapeLocationJawRight    | 下颌向右运动 |  |
-| [ARBlendShapeLocationMouthClose](#ARBlendShapeLocationMouthClose)    | 嘴唇闭合的系数与颌位置无关 | 
-  |
+| [ARBlendShapeLocationMouthClose](#ARBlendShapeLocationMouthClose)    | 嘴唇闭合的系数与颌位置无关 | |
 | ARBlendShapeLocationMouthDimpleLeft  | 嘴左角后移 |   |
 | ARBlendShapeLocationMouthDimpleRight  | 嘴右角后移  |   |
 | ARBlendShapeLocationMouthFrownLeft   | 嘴左角向下运动 |   |

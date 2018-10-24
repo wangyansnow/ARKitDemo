@@ -317,5 +317,4 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 | ARBlendShapeLocationNoseSneerRight   | 右鼻孔抬高 |   |
 | ARBlendShapeLocationTongueOut  | 舌头延伸 |   |
 
-
 <div id='mouth'>1. ARBlendShapeLocationMouthClose</div>![@ARBlendShapeLocationMouthClose](./1539850975932.png)

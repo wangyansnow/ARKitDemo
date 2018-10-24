@@ -10,15 +10,15 @@
 
 <h4 id='1'>1. ARKit点击屏幕增加文字</h4>
 
-![@点击屏幕增加文字|center|200x0](./1.点击屏幕增加文字.gif)
+![1.点击屏幕增加文字.gif](https://upload-images.jianshu.io/upload_images/1679203-104748b6456ce8d7.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 * command+shift+n新建一个项目，然后选择`Augmented Reality App`
 
-![Alt text](./1540368433698.png)
+![](https://upload-images.jianshu.io/upload_images/1679203-055f0cdc8f5eac78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 在Content Technology中选择`SpriteKit`即可
 
-![Alt text](./1540368501288.png)
+![](https://upload-images.jianshu.io/upload_images/1679203-d78bf64274d811f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 控制文字距离相机的距离(改变这个Z感受一下变化)
 ```objectivec
@@ -26,7 +26,7 @@ matrix_float4x4 translation = matrix_identity_float4x4;
 translation.columns[3].z = -1;
 ```
 <h4 id='2'>2. ARKit点击屏幕增加3D模型</h4>
-![@点击屏幕增加3D模型|center|200x0](./2.点击屏幕增加3D模型.gif)
+![2.点击屏幕增加3D模型.gif](https://upload-images.jianshu.io/upload_images/1679203-5a944e1459d2d6bc.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 <h5 id='2.1'>2.1 画面捕捉</h5>
 主要就是三个类：
 * `ARSCNView`: 画面显示
@@ -68,7 +68,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 
 <h4 id='3'>3. ARKit检测到平面自动增加3D模型</h4>
 
-![@检测到平面增加3D模型|center|200x0](./3.检测到平面增加3D模型.gif)
+![3.检测到平面增加3D模型.gif](https://upload-images.jianshu.io/upload_images/1679203-e68ce9a09254f8e9.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 前期准备工作和[2.1](#2.1)一样，只是增加了`self.arSCNView.delegate = self`
 然后在代理方法`renderer:didAddNode:forAnchor:`中实现以下代码：
@@ -111,7 +111,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 ```
 <h4 id='4'>4. QuickLook的最简单使用</h4>
 
-![@QuickLook简单使用|center|200x0](./4.QuickLook简单使用.gif)
+![4.QuickLook简单使用.gif](https://upload-images.jianshu.io/upload_images/1679203-1b5460945c31e271.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 这个没什么好说的，直接上代码
 
@@ -159,7 +159,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 ```
 <h4 id='5'>5. ARKit人脸贴图</h4>
 
-![@人脸贴图|center|200x0](./5.人脸贴图.gif)
+![5.人脸贴图.gif](https://upload-images.jianshu.io/upload_images/1679203-65ac818e1cfa8df5.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 设置session的configuration为`ARFaceTrackingConfiguration`,然后在ARSCNView的代理`renderer:willUpdateNode:forAnchor`中增加一个`SCNNode`核心代码如下：
 * 创建`SCNNode`
@@ -202,7 +202,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 ```
 <h4 id='6'>6. ARKit微笑检测</h4>
 
-![@微笑检测|center|200x0](./6.微笑检测.gif)
+![6.微笑检测.gif](https://upload-images.jianshu.io/upload_images/1679203-1a9e833e222dce7e.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 主要用到了`ARBlendShapeLocationMouthSmileLeft`和`ARBlendShapeLocationMouthSmileRight`表示微笑的键值
 我提供的demo是用于调试微笑阀值的
@@ -232,7 +232,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 
 <h4 id='7'>7. ARKit皱眉检测</h4>
 
-![@7皱眉检测|center|200x0](./7.皱眉检测.gif)
+![7.皱眉检测.gif](https://upload-images.jianshu.io/upload_images/1679203-1c18bd6d24767258.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
 我这里用的是眉毛向上的键值`ARBlendShapeLocationBrowInnerUp`
 核心代码：
@@ -262,7 +262,7 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 * 每个建对应的值都是0~1的值
 * 共51个表示人脸特征的参数
 
-![Alt text](./1539849145527.png)
+![](https://upload-images.jianshu.io/upload_images/1679203-4f2261c6c451f578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 | 属性      |     说明 |   备注   |
 | :------: | :------:| :------: |
@@ -317,4 +317,5 @@ self.arSCNView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:nil];
 | ARBlendShapeLocationNoseSneerRight   | 右鼻孔抬高 |   |
 | ARBlendShapeLocationTongueOut  | 舌头延伸 |   |
 
-<div id='mouth'>1. ARBlendShapeLocationMouthClose</div>![@ARBlendShapeLocationMouthClose](./1539850975932.png)
+<div id='mouth'>1. ARBlendShapeLocationMouthClose</div>
+![ARBlendShapeLocationMouthClose](https://upload-images.jianshu.io/upload_images/1679203-da94882a82af11f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
